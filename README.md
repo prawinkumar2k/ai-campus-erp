@@ -1,4 +1,4 @@
-<div align="center">
+﻿<div align="center">
 
 <!-- Banner -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:10B981,100:047857&height=220&section=header&text=NeuroCampus%20AI&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI-Native%20Campus%20ERP%20Platform&descAlignY=60&descSize=22" width="100%"/>
@@ -60,6 +60,12 @@
 ---
 
 ## 🎥 Live Demo
+
+### Demo Preview
+
+![NeuroCampus AI demo preview](./docs/demo/demo-preview.gif)
+
+*Animated preview assembled from the existing landing page, admin dashboard, enquiry dashboard, and HR dashboard screenshots.*
 
 ### Admin Dashboard — Full Feature Walkthrough
 
@@ -765,3 +771,4 @@ Full-Stack Engineer | AI-Native Developer
 **NeuroCampus AI** — *Transforming Campus Management with Intelligence*
 
 </div>
+
