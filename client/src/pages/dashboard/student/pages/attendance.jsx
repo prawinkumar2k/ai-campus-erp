@@ -135,7 +135,7 @@ const Attendance = () => {
         return null;
     };
 
-    const COLORS = ['#2563eb', '#059669', '#0891b2', '#f59e0b', '#6366f1', '#8b5cf6', '#ec4899', '#ef4444'];
+    const COLORS = ['#2563eb', '#059669', '#0891b2', '#f59e0b', '#059669', '#10b981', '#059669', '#ef4444'];
 
     return (
         <section className="overlay">

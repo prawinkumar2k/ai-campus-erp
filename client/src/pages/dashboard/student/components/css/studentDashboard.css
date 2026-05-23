@@ -164,7 +164,7 @@
 }
 
 .gradient-purple {
-    background: #faf5ff;
+    background: #f0fdf4;
 }
 
 .gradient-orange {
@@ -180,7 +180,7 @@
 }
 
 .purple-text {
-    color: #9333ea;
+    color: #10b981;
 }
 
 .orange-text {
@@ -196,7 +196,7 @@
 }
 
 .purple-fill {
-    background: #a855f7;
+    background: #10b981;
 }
 
 .orange-fill {
@@ -395,12 +395,12 @@
 }
 
 .text-purple {
-    color: #9333ea;
+    color: #10b981;
 }
 
 .bg-purple-subtle {
     background-color: #f3e8ff;
-    color: #9333ea;
+    color: #10b981;
 }
 
 /* ===== Timetable Table Styles ===== */

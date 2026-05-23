@@ -1,5 +1,5 @@
 # ============================================
-# SF-ERP Production Docker Compose
+# NeuroCampus AI Production Docker Compose
 # High-availability configuration
 # ============================================
 
@@ -16,8 +16,8 @@ services:
       args:
         VITE_API_URL: /api
         VITE_APP_VERSION: ${APP_VERSION:-1.0.0}
-    image: ${DOCKER_REGISTRY:-}sf-erp-frontend:${APP_VERSION:-latest}
-    container_name: sf-erp-frontend
+    image: ${DOCKER_REGISTRY:-}neurocampus-ai-frontend:${APP_VERSION:-latest}
+    container_name: neurocampus-ai-frontend
     restart: unless-stopped
     ports:
       - "${FRONTEND_PORT:-80}:80"
@@ -26,7 +26,7 @@ services:
       backend:
         condition: service_healthy
     networks:
-      - sf-erp-network
+      - neurocampus-ai-network
     deploy:
       resources:
         limits:
@@ -54,8 +54,8 @@ services:
     build:
       context: ./server
       dockerfile: ../docker/backend/Dockerfile
-    image: ${DOCKER_REGISTRY:-}sf-erp-backend:${APP_VERSION:-latest}
-    container_name: sf-erp-backend
+    image: ${DOCKER_REGISTRY:-}neurocampus-ai-backend:${APP_VERSION:-latest}
+    container_name: neurocampus-ai-backend
     restart: unless-stopped
     expose:
       - "5000"
@@ -73,7 +73,7 @@ services:
       mongodb:
         condition: service_healthy
     networks:
-      - sf-erp-network
+      - neurocampus-ai-network
     deploy:
       resources:
         limits:
@@ -99,7 +99,7 @@ services:
   # ==========================================
   mongodb:
     image: mongo:7
-    container_name: sf-erp-mongodb
+    container_name: neurocampus-ai-mongodb
     restart: unless-stopped
     environment:
       MONGO_INITDB_DATABASE: ${MONGO_DB_NAME:-cms_db}
@@ -108,7 +108,7 @@ services:
     volumes:
       - mongodb-data:/data/db
     networks:
-      - sf-erp-network
+      - neurocampus-ai-network
     deploy:
       resources:
         limits:
@@ -134,13 +134,13 @@ services:
   # ==========================================
   redis:
     image: redis:7-alpine
-    container_name: sf-erp-redis
+    container_name: neurocampus-ai-redis
     restart: unless-stopped
     command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
     volumes:
       - redis-data:/data
     networks:
-      - sf-erp-network
+      - neurocampus-ai-network
     deploy:
       resources:
         limits:
@@ -164,7 +164,7 @@ services:
 # Networks
 # ==========================================
 networks:
-  sf-erp-network:
+  neurocampus-ai-network:
     driver: bridge
     ipam:
       config:

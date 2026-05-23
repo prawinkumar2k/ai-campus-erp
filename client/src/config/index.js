@@ -14,7 +14,7 @@ const config = {
 
   // Application Settings
   app: {
-    name: import.meta.env.VITE_APP_NAME || 'SF-ERP',
+    name: import.meta.env.VITE_APP_NAME || 'NeuroCampus AI',
     version: import.meta.env.VITE_APP_VERSION || '1.0.0',
     environment: import.meta.env.MODE || 'development',
     isProduction: import.meta.env.PROD,

@@ -218,7 +218,7 @@ const StudentDashboard = () => {
                             title="Internal GPA"
                             value={stats.gpa}
                             icon={GraduationCap}
-                            color="#9333ea"
+                            color="#10b981"
                             progress={parseFloat(stats.gpa) * 10}
                             left="Current Standing"
                             right="Estimated"

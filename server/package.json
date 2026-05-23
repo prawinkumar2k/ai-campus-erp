@@ -1,5 +1,5 @@
 {
-  "name": "sf-erp-server",
+  "name": "neurocampus-ai-server",
   "version": "1.0.0",
   "main": "app.js",
   "type": "module",
@@ -23,9 +23,9 @@
     "education",
     "management"
   ],
-  "author": "SF-ERP Team",
+  "author": "NeuroCampus AI Team",
   "license": "ISC",
-  "description": "SF-ERP Backend API Server - Production-grade ERP system",
+  "description": "NeuroCampus AI Backend API Server - Production-grade ERP system",
   "dependencies": {
     "axios": "^1.15.0",
     "bcryptjs": "^3.0.3",

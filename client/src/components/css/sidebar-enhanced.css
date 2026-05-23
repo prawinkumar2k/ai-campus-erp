@@ -59,15 +59,15 @@
 
 .sidebar-menu li a:hover,
 .sidebar-menu li>Link:hover {
-  background: rgba(102, 126, 234, 0.08);
-  color: #667eea;
+  background: rgba(16, 185, 129, 0.08);
+  color: #10b981;
   transform: translateX(4px);
 }
 
 /* Menu Icon Base Styling */
 .sidebar-menu .menu-icon {
   font-size: 1.25rem;
-  color: #667eea;
+  color: #10b981;
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
@@ -96,7 +96,7 @@
 }
 
 .sidebar-menu .dropdown-toggle:hover {
-  background: rgba(102, 126, 234, 0.08);
+  background: rgba(16, 185, 129, 0.08);
   transform: translateX(2px);
 }
 
@@ -121,7 +121,7 @@
   top: 4px;
   bottom: 4px;
   width: 3px;
-  background: var(--gradient-color, linear-gradient(135deg, #667eea 0%, #764ba2 100%));
+  background: var(--gradient-color, linear-gradient(135deg, #10b981 0%, #059669 100%));
   border-radius: 3px 0 0 3px;
   opacity: 1;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -194,12 +194,12 @@
   width: 44px;
   height: 44px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   color: white;
   flex-shrink: 0;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 0.9rem;
-  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.5);
   position: relative;
   overflow: hidden;
   backdrop-filter: blur(10px);
@@ -235,8 +235,8 @@
 
 /* Icon Color Variations with Glass Morphism Gradients */
 .submenu-icon-wrapper.blue {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 8px 32px rgba(16, 185, 129, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.5);
   border: 1.5px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -286,12 +286,12 @@
 .sidebar-submenu li a:hover .submenu-icon-wrapper,
 .sidebar-submenu li>Link:hover .submenu-icon-wrapper {
   transform: scale(1.15);
-  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 12px 40px rgba(16, 185, 129, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.6);
 }
 
 .sidebar-submenu-link:hover .submenu-icon-wrapper {
   transform: scale(1.15);
-  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 12px 40px rgba(16, 185, 129, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.6);
 }
 
 .sidebar-submenu-link:hover .submenu-icon-wrapper::after {
@@ -563,7 +563,7 @@
 
 .sidebar-menu li.dropdown.open>a,
 .sidebar-menu li.dropdown.dropdown-open>a {
-  background-color: var(--gradient-color, #667eea);
+  background-color: var(--gradient-color, #10b981);
   color: #fff;
 }
 
@@ -584,7 +584,7 @@
 }
 
 .sidebar-menu li>a.active-page {
-  background-color: var(--gradient-color, #667eea);
+  background-color: var(--gradient-color, #10b981);
   color: #fff;
 }
 
@@ -616,7 +616,7 @@
 }
 
 .sidebar-menu li a:hover {
-  color: var(--gradient-color, #667eea);
+  color: var(--gradient-color, #10b981);
 }
 
 .sidebar-menu li a .menu-icon {
@@ -805,12 +805,12 @@
 
 /* Active state for dropdown items - main menu */
 .sidebar-menu li.dropdown.active>.dropdown-toggle {
-  background-color: var(--gradient-color, #667eea);
+  background-color: var(--gradient-color, #10b981);
   color: white;
 }
 
 .nested-dropdown.active>.nested-dropdown-toggle .menu-icon {
-  color: var(--gradient-color, #667eea) !important;
+  color: var(--gradient-color, #10b981) !important;
 }
 
 /* Smooth transitions for all interactive elements */

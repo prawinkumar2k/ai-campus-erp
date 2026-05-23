@@ -623,7 +623,7 @@ function TimetableTable({ timetable, days, periods, subjects, onCellDoubleClick,
     { bg: "#d1fae5", color: "#065f46" },
     { bg: "#fef3c7", color: "#92400e" },
     { bg: "#ede9fe", color: "#6d28d9" },
-    { bg: "#fce7f3", color: "#be185d" },
+    { bg: "#fce7f3", color: "#047857" },
     { bg: "#ffedd5", color: "#c2410c" },
     { bg: "#ccfbf1", color: "#134e4a" },
   ];
@@ -740,7 +740,7 @@ function TimetableTable({ timetable, days, periods, subjects, onCellDoubleClick,
                           }}>
                             {/* Header with gradient */}
                             <div style={{
-                              background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                              background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
                               padding: "24px",
                               color: "white",
                               position: "relative",
@@ -966,7 +966,7 @@ function TimetableTable({ timetable, days, periods, subjects, onCellDoubleClick,
                                 style={{
                                   flex: 1,
                                   padding: "14px 24px",
-                                  background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+                                  background: "linear-gradient(135deg, #10b981 0%, #059669 100%)",
                                   color: "white",
                                   border: "none",
                                   borderRadius: "10px",
@@ -974,16 +974,16 @@ function TimetableTable({ timetable, days, periods, subjects, onCellDoubleClick,
                                   fontSize: "15px",
                                   fontWeight: "600",
                                   transition: "all 0.2s",
-                                  boxShadow: "0 4px 12px rgba(102, 126, 234, 0.4)",
+                                  boxShadow: "0 4px 12px rgba(16, 185, 129, 0.4)",
                                   letterSpacing: "0.3px"
                                 }}
                                 onMouseEnter={(e) => {
                                   e.currentTarget.style.transform = "translateY(-2px)";
-                                  e.currentTarget.style.boxShadow = "0 6px 20px rgba(102, 126, 234, 0.5)";
+                                  e.currentTarget.style.boxShadow = "0 6px 20px rgba(16, 185, 129, 0.5)";
                                 }}
                                 onMouseLeave={(e) => {
                                   e.currentTarget.style.transform = "translateY(0)";
-                                  e.currentTarget.style.boxShadow = "0 4px 12px rgba(102, 126, 234, 0.4)";
+                                  e.currentTarget.style.boxShadow = "0 4px 12px rgba(16, 185, 129, 0.4)";
                                 }}
                               >
                                 Apply Changes

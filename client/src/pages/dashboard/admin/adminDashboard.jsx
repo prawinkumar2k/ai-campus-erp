@@ -433,7 +433,7 @@ const AdminDashboard = () => {
                 title="Daily Attendance"
                 value={`${dashboardData.attendance}%`}
                 icon={ClipboardCheck}
-                color="#9333ea"
+                color="#10b981"
                 progress={dashboardData.attendance || 0}
                 left="Daily percentage"
                 right="Overall Avg"
@@ -460,7 +460,7 @@ const AdminDashboard = () => {
                 title="Exam Performance"
                 value={`${enhancedData.exams.averageMarks}%`}
                 icon={TrendingUp}
-                color="#7c3aed"
+                color="#10b981"
                 progress={parseFloat(enhancedData.exams.averageMarks) || 0}
                 left={`${enhancedData.exams.passed} Passed`}
                 right={`${enhancedData.exams.failed} Failed`}
@@ -749,7 +749,7 @@ const AdminDashboard = () => {
                       <XAxis dataKey="subject" fontSize={11} />
                       <YAxis domain={[0, 100]} fontSize={11} />
                       <Tooltip />
-                      <Bar dataKey="average" fill="#7c3aed" radius={[8, 8, 0, 0]} />
+                      <Bar dataKey="average" fill="#10b981" radius={[8, 8, 0, 0]} />
                     </BarChart>
                   </ResponsiveContainer>
                 </div>

@@ -161,13 +161,13 @@ const EmployeeProfile = () => {
                                 {selectedEmployee ? (
                                     <>
                                         {/* Profile Header */}
-                                        <div className="card border-0 shadow-sm mb-4" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+                                        <div className="card border-0 shadow-sm mb-4" style={{ background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)' }}>
                                             <div className="card-body py-4 text-white">
                                                 <div className="row align-items-center">
                                                     <div className="col-md-8">
                                                         <div className="d-flex align-items-center gap-3">
                                                             <div className="bg-white rounded-circle p-3">
-                                                                <Icon icon="mdi:account" style={{ fontSize: '40px', color: '#667eea' }} />
+                                                                <Icon icon="mdi:account" style={{ fontSize: '40px', color: '#10b981' }} />
                                                             </div>
                                                             <div>
                                                                 <h4 className="mb-0 fw-bold">{selectedEmployee.Staff_Name}</h4>

@@ -187,7 +187,7 @@ router.get('/metrics', async (req, res) => {
  */
 router.get('/info', (req, res) => {
   res.status(200).json({
-    name: 'SF-ERP API Server',
+    name: 'NeuroCampus AI API Server',
     version: process.env.npm_package_version || '1.0.0',
     environment: config.server.env,
     nodeVersion: process.version,

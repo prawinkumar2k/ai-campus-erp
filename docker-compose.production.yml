@@ -1,5 +1,5 @@
 # =============================================================================
-# SF-ERP Production Docker Compose
+# NeuroCampus AI Production Docker Compose
 # =============================================================================
 # Production-grade orchestration with:
 # - Health checks for all services
@@ -17,7 +17,7 @@ services:
   # ===========================================================================
   mongodb:
     image: mongo:7
-    container_name: sferp_mongodb
+    container_name: neurocampus_ai_mongodb
     restart: always
     environment:
       MONGO_INITDB_DATABASE: ${MONGO_DB_NAME:-cms_db}
@@ -46,7 +46,7 @@ services:
     build:
       context: ./server
       dockerfile: Dockerfile.prod
-    container_name: sferp_backend
+    container_name: neurocampus_ai_backend
     restart: always
     environment:
       NODE_ENV: production
@@ -88,9 +88,9 @@ services:
       dockerfile: Dockerfile.prod
       args:
         VITE_API_URL: /api
-        VITE_APP_NAME: ${APP_NAME:-SF-ERP}
+        VITE_APP_NAME: ${APP_NAME:-"NeuroCampus AI"}
         VITE_APP_VERSION: ${APP_VERSION:-1.0.0}
-    container_name: sferp_frontend
+    container_name: neurocampus_ai_frontend
     restart: always
     ports:
       - "${CLIENT_PORT:-80}:80"
@@ -119,7 +119,7 @@ services:
   # ===========================================================================
   nginx:
     image: nginx:1.25-alpine
-    container_name: sferp_nginx
+    container_name: neurocampus_ai_nginx
     restart: always
     ports:
       - "80:80"
@@ -153,7 +153,7 @@ services:
   # ===========================================================================
   redis:
     image: redis:7-alpine
-    container_name: sferp_redis
+    container_name: neurocampus_ai_redis
     restart: always
     command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
     volumes:
@@ -178,10 +178,10 @@ services:
 networks:
   frontend:
     driver: bridge
-    name: sferp_frontend
+    name: neurocampus_ai_frontend
   backend:
     driver: bridge
-    name: sferp_backend
+    name: neurocampus_ai_backend
     internal: true
 
 # =============================================================================
@@ -190,16 +190,16 @@ networks:
 volumes:
   mongodb_data:
     driver: local
-    name: sferp_mongodb_data
+    name: neurocampus_ai_mongodb_data
   redis_data:
     driver: local
-    name: sferp_redis_data
+    name: neurocampus_ai_redis_data
   uploads_data:
     driver: local
-    name: sferp_uploads
+    name: neurocampus_ai_uploads
   logs_data:
     driver: local
-    name: sferp_logs
+    name: neurocampus_ai_logs
   nginx_logs:
     driver: local
-    name: sferp_nginx_logs
+    name: neurocampus_ai_nginx_logs

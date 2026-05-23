@@ -1,5 +1,5 @@
 # =============================================================================
-# SF-ERP Frontend Production Dockerfile
+# NeuroCampus AI Frontend Production Dockerfile
 # =============================================================================
 # Multi-stage build with Nginx for serving static files
 # Features:
@@ -32,7 +32,7 @@ COPY . .
 
 # Build arguments for environment-specific builds
 ARG VITE_API_URL=/api
-ARG VITE_APP_NAME=SF-ERP
+ARG VITE_APP_NAME="NeuroCampus AI"
 ARG VITE_APP_VERSION=1.0.0
 
 # Set build-time environment variables
@@ -52,9 +52,9 @@ RUN find /app/dist -name "*.map" -delete
 FROM nginx:1.25-alpine AS production
 
 # Labels for image metadata
-LABEL maintainer="SF-ERP Team"
+LABEL maintainer="NeuroCampus AI Team"
 LABEL version="1.0.0"
-LABEL description="SF-ERP Frontend Production Server"
+LABEL description="NeuroCampus AI Frontend Production Server"
 
 # Install security updates and curl for health checks
 RUN apk update && \

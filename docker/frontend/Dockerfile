@@ -1,5 +1,5 @@
 # ============================================
-# SF-ERP Frontend - Production Dockerfile
+# NeuroCampus AI Frontend - Production Dockerfile
 # Multi-stage build with Nginx
 # ============================================
 
@@ -31,9 +31,9 @@ RUN npm run build
 FROM nginx:1.25-alpine AS production
 
 # Add labels
-LABEL maintainer="SF-ERP Team"
+LABEL maintainer="NeuroCampus AI Team"
 LABEL version="1.0.0"
-LABEL description="SF-ERP Frontend Web Application"
+LABEL description="NeuroCampus AI Frontend Web Application"
 
 # Install curl for health checks
 RUN apk add --no-cache curl

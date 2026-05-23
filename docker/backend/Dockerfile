@@ -1,5 +1,5 @@
 # ============================================
-# SF-ERP Backend - Production Dockerfile
+# NeuroCampus AI Backend - Production Dockerfile
 # Multi-stage build for minimal image size
 # ============================================
 
@@ -19,9 +19,9 @@ RUN npm ci --only=production --ignore-scripts && \
 FROM node:22-alpine AS production
 
 # Add labels for container metadata
-LABEL maintainer="SF-ERP Team"
+LABEL maintainer="NeuroCampus AI Team"
 LABEL version="1.0.0"
-LABEL description="SF-ERP Backend API Server"
+LABEL description="NeuroCampus AI Backend API Server"
 
 # Set environment variables
 ENV NODE_ENV=production

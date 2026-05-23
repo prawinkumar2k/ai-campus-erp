@@ -1,5 +1,5 @@
 /**
- * SF-ERP Master Load Test Script (k6)
+ * NeuroCampus AI Master Load Test Script (k6)
  * =====================================
  * 
  * This script tests the system under various load conditions:
@@ -369,7 +369,7 @@ function textSummary(data, options) {
   
   let summary = `
 ╔══════════════════════════════════════════════════════════════╗
-║           SF-ERP LOAD TEST RESULTS - ${TEST_TYPE.toUpperCase()}                 ║
+║        NeuroCampus AI LOAD TEST RESULTS - ${TEST_TYPE.toUpperCase()}             ║
 ╠══════════════════════════════════════════════════════════════╣
 ║ Total Requests: ${metrics.http_reqs?.values?.count || 0}
 ║ Failed Requests: ${metrics.http_req_failed?.values?.passes || 0}

@@ -154,7 +154,7 @@ const MarkDetails = () => {
                             title="University Records"
                             value={stats.univCount}
                             icon={GraduationCap}
-                            color="#9333ea"
+                            color="#10b981"
                             progress={100}
                             left="Exams Cleared"
                             right="Main Stream"
@@ -520,7 +520,7 @@ const MarkDetails = () => {
                     align-items: center;
                     justify-content: center;
                 }
-                .bg-purple-subtle { background: #f5f3ff; color: #7c3aed; }
+                .bg-purple-subtle { background: #eef2ff; color: #10b981; }
                 .bg-green-subtle { background: #f0fdf4; color: #16a34a; }
                 .bg-orange-subtle { background: #fff7ed; color: #ea580c; }
                 
@@ -627,8 +627,8 @@ const MarkDetails = () => {
                 .bg-blue-50 { background: #eff6ff; }
                 .text-blue-600 { color: #2563eb; }
                 .border-blue-100 { border-color: #dbeafe; }
-                .bg-purple-50 { background: #faf5ff; }
-                .text-purple-600 { color: #9333ea; }
+                .bg-purple-50 { background: #f0fdf4; }
+                .text-purple-600 { color: #10b981; }
                 .border-purple-100 { border-color: #f3e8ff; }
                 .text-blue-400 { color: #60a5fa; }
                 .bg-orange-50 { background: #fff7ed; }

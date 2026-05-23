@@ -677,7 +677,7 @@ const UserCreation = () => {
                         <div className="module-list" style={{ maxHeight: '600px', overflowY: 'auto', padding: '4px', scrollbarWidth: 'thin' }}>
                           {Object.keys(groupedModules).map((category) => {
                             const categoryColors = {
-                              'Common': { gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', icon: 'fa-home', bg: '#f0f4ff' },
+                              'Common': { gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)', icon: 'fa-home', bg: '#f0f4ff' },
                               'Admin': { gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', icon: 'fa-user-shield', bg: '#fff0f5' },
                               'Master': { gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)', icon: 'fa-database', bg: '#f0faff' },
                               'Administrator': { gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)', icon: 'fa-user-graduate', bg: '#f0fff4' },
@@ -686,7 +686,7 @@ const UserCreation = () => {
                               'Examination': { gradient: 'linear-gradient(135deg, #86f3eeff 0%, #336deaff 100%)', icon: 'fa-clipboard-list', bg: '#f5fffa' },
                               'Admission': { gradient: 'linear-gradient(135deg, #ff9a9e 0%, #f888d5ff 100%)', icon: 'fa-chart-bar', bg: '#fff5f8' }
                             };
-                            const catStyle = categoryColors[category] || { gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', icon: 'fa-layer-group', bg: '#f8f9fa' };
+                            const catStyle = categoryColors[category] || { gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)', icon: 'fa-layer-group', bg: '#f8f9fa' };
 
                             return (
                               <div key={category} className="mb-4" style={{ backgroundColor: catStyle.bg, borderRadius: '12px', padding: '16px', border: '1px solid rgba(0,0,0,0.05)' }}>
@@ -722,7 +722,7 @@ const UserCreation = () => {
                                         onClick={() => handleModuleToggle(module.module_key)}
                                       >
                                         <div className="d-flex align-items-center gap-2">
-                                          <div style={{ width: '42px', height: '42px', borderRadius: '10px', background: form.accessModules[module.module_key] ? 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' : '#f5f7fa', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                          <div style={{ width: '42px', height: '42px', borderRadius: '10px', background: form.accessModules[module.module_key] ? 'linear-gradient(135deg, #10b981 0%, #059669 100%)' : '#f5f7fa', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                             <i className="fas fa-cube" style={{ color: form.accessModules[module.module_key] ? 'white' : '#6c757d' }}></i>
                                           </div>
                                           <div>

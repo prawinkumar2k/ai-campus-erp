@@ -47,11 +47,11 @@
 
 .view-toggle-btn:hover,
 .view-toggle-btn.active {
-  background: #4f46e5;
-  border-color: #4f46e5;
+  background: #10b981;
+  border-color: #10b981;
   color: #ffffff;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
 }
 
 /* Enhanced Table Styles */
@@ -207,7 +207,7 @@
 
 .avatar-placeholder {
   border-radius: 50%;
-  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
   color: white;
   display: flex;
   align-items: center;
@@ -220,7 +220,7 @@
 
 .avatar-placeholder:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 16px rgba(79, 70, 229, 0.3);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
 }
 
 /* Enhanced Action Buttons */
@@ -316,8 +316,8 @@
 }
 
 .search-input-container input:focus {
-  border-color: #4f46e5;
-  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
 }
 
 .search-input-icon {

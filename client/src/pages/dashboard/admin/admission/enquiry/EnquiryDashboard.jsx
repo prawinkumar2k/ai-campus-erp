@@ -156,7 +156,7 @@ const EnquiryDashboard = () => {
           <div className="stat-grid">
             <StatCard title="Total Enquiries" value={analytics.total} icon={Users} color="#2563eb" progress={65} left="0% today" right="+12% from last month" />
             <StatCard title="Today's Enquiries" value={analytics.today.length} icon={Calendar} color="#059669" progress={30} left="New registrations" right="Right on track" />
-            <StatCard title="Conversion Rate" value={analytics.conversion} icon={Target} color="#9333ea" progress={20} left="1 lead converted" right="Industry avg 28%" />
+            <StatCard title="Conversion Rate" value={analytics.conversion} icon={Target} color="#10b981" progress={20} left="1 lead converted" right="Industry avg 28%" />
             <StatCard title="Pending Follow-ups" value={analytics.pending} icon={AlertCircle} color="#ea580c" progress={75} left="Action needed" right="Requires attention" />
           </div>
 

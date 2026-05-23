@@ -23,7 +23,7 @@ const HomePage = () => {
       description: 'Comprehensive master data management for branches, courses, subjects, staff, and academic calendars.',
       features: ['Branch Management', 'Course & Subject Allocation', 'Staff Details', 'Academic Calendar', 'Fee Master'],
       color: 'bg-primary',
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+      gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)'
     },
     {
       icon: 'solar:user-id-bold-duotone',
@@ -122,8 +122,8 @@ const HomePage = () => {
       <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'navbar-scrolled' : 'navbar-transparent'}`}>
         <div className="container">
           <Link className="navbar-brand d-flex align-items-center" to="/">
-            <Icon icon="solar:book-bold-duotone" className="text-2xl me-2" style={{ color: '#667eea' }} />
-            <span className="fw-bold fs-4">SF CMS</span>
+            <Icon icon="solar:book-bold-duotone" className="text-2xl me-2" style={{ color: '#10b981' }} />
+            <span className="fw-bold fs-4">NeuroCampus AI</span>
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <Icon icon="solar:hamburger-menu-bold" className="text-2xl" />
@@ -166,7 +166,7 @@ const HomePage = () => {
             <div className="col-lg-6 hero-content">
               <div className="badge-glow mb-4">
                 <Icon icon="solar:star-bold" className="me-2" />
-                Complete CMS Solution
+                 Complete ERP Solution
               </div>
               <h1 className="hero-title mb-4">
                 Transform Your <br />
@@ -174,7 +174,7 @@ const HomePage = () => {
                 Institution
               </h1>
               <p className="hero-description mb-5">
-                Comprehensive Campus Management System designed specifically for educational institutions.
+                 Comprehensive Campus Management System designed with next-generation AI and intelligence.
                 Manage students, staff, academics, examinations, and finances all in one powerful platform.
               </p>
               <div className="d-flex gap-3 flex-wrap mb-5">
@@ -215,7 +215,7 @@ const HomePage = () => {
                     <span></span>
                   </div>
                   <Icon icon="solar:chart-2-bold-duotone" className="main-card-icon" />
-                  <h4 className="main-card-title">Complete CMS System</h4>
+                  <h4 className="main-card-title">Complete NeuroCampus AI System</h4>
                   <p className="main-card-subtitle">All-in-one solution for your institution</p>
                 </div>
               </div>
@@ -229,7 +229,7 @@ const HomePage = () => {
         <div className="container py-5">
           <div className="text-center mb-5">
             <div className="badge badge-primary mb-3">Features</div>
-            <h2 className="display-5 fw-bold mb-3">Why Choose SF CMS?</h2>
+            <h2 className="display-5 fw-bold mb-3">Why Choose NeuroCampus AI?</h2>
             <p className="lead text-muted">Powerful features designed for modern educational institutions</p>
           </div>
           <div className="row g-4">
@@ -368,7 +368,7 @@ const HomePage = () => {
               <Icon icon="solar:rocket-2-bold-duotone" className="text-2xl mb-4" style={{ color: 'white' }} />
               <h2 className="display-4 fw-bold mb-4 text-white">Ready to Transform Your Institution?</h2>
               <p className="lead mb-4 text-white-50">
-                Join hundreds of institutions already using SF CMS to streamline their operations
+                Join hundreds of institutions already using NeuroCampus AI to streamline their operations
               </p>
               <div className="d-flex gap-3 justify-content-center flex-wrap">
                 <Link to="/login" className="btn btn-light btn-lg px-5 py-3">
@@ -400,7 +400,7 @@ const HomePage = () => {
                   <div className="contact-card">
                     <Icon icon="solar:letter-bold-duotone" className="text-2xl text-primary mb-3" />
                     <h5 className="fw-bold mb-2">Email</h5>
-                    <p className="text-muted mb-0">info@sfcms.com</p>
+                    <p className="text-muted mb-0">info@neurocampus.ai</p>
                   </div>
                 </div>
                 <div className="col-md-4 text-center">
@@ -429,8 +429,8 @@ const HomePage = () => {
           <div className="row">
             <div className="col-lg-4 mb-4 mb-lg-0">
               <div className="d-flex align-items-center mb-3">
-                <Icon icon="solar:book-bold-duotone" className="text-2xl me-2" style={{ color: '#667eea' }} />
-                <span className="fw-bold fs-4">SF CMS</span>
+                <Icon icon="solar:book-bold-duotone" className="text-2xl me-2" style={{ color: '#10b981' }} />
+                <span className="fw-bold fs-4">NeuroCampus AI</span>
               </div>
               <p className="text-muted">
                 Complete College Management Software for educational institutions.
@@ -491,7 +491,7 @@ const HomePage = () => {
           <div className="row align-items-center">
             <div className="col-md-6 text-center text-md-start">
               <p className="text-muted small mb-0">
-                © 2025 SF CMS. All rights reserved.
+                © 2026 NeuroCampus AI. All rights reserved.
               </p>
             </div>
             <div className="col-md-6 text-center text-md-end">
@@ -523,8 +523,8 @@ const HomePage = () => {
         .navbar-scrolled {
           background: rgba(255, 255, 255, 0.95);
           backdrop-filter: blur(20px);
-          box-shadow: 0 4px 30px rgba(102, 126, 234, 0.15);
-          border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+          box-shadow: 0 4px 30px rgba(16, 185, 129, 0.15);
+          border-bottom: 1px solid rgba(16, 185, 129, 0.1);
         }
 
         .navbar-brand {
@@ -539,7 +539,7 @@ const HomePage = () => {
         }
 
         .nav-link:hover {
-          color: #667eea !important;
+          color: #10b981 !important;
           transform: translateY(-2px);
         }
 
@@ -571,7 +571,7 @@ const HomePage = () => {
         .orb-1 {
           width: 600px;
           height: 600px;
-          background: radial-gradient(circle, rgba(102, 126, 234, 0.25) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(16, 185, 129, 0.25) 0%, transparent 70%);
           top: -200px;
           right: -100px;
           animation-delay: 0s;
@@ -614,8 +614,8 @@ const HomePage = () => {
           right: 0;
           bottom: 0;
           background-image: 
-            linear-gradient(rgba(102, 126, 234, 0.08) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(102, 126, 234, 0.08) 1px, transparent 1px);
+            linear-gradient(rgba(16, 185, 129, 0.08) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(16, 185, 129, 0.08) 1px, transparent 1px);
           background-size: 50px 50px;
           z-index: 0;
         }
@@ -635,9 +635,9 @@ const HomePage = () => {
           display: inline-block;
           padding: 0.75rem 1.5rem;
           border-radius: 50px;
-          background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
-          border: 1px solid rgba(102, 126, 234, 0.3);
-          color: #667eea;
+          background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.15) 100%);
+          border: 1px solid rgba(16, 185, 129, 0.3);
+          color: #10b981;
           font-weight: 600;
           font-size: 0.9rem;
           backdrop-filter: blur(10px);
@@ -646,10 +646,10 @@ const HomePage = () => {
 
         @keyframes pulse-glow {
           0%, 100% {
-            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
           }
           50% {
-            box-shadow: 0 0 40px rgba(102, 126, 234, 0.6);
+            box-shadow: 0 0 40px rgba(16, 185, 129, 0.6);
           }
         }
 
@@ -662,7 +662,7 @@ const HomePage = () => {
         }
 
         .text-gradient-animated {
-          background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #667eea);
+          background: linear-gradient(45deg, #10b981, #059669, #f093fb, #10b981);
           background-size: 300% 300%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -692,7 +692,7 @@ const HomePage = () => {
           padding: 1rem 2.5rem;
           border: none;
           border-radius: 50px;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           color: white;
           font-weight: 600;
           font-size: 1rem;
@@ -706,7 +706,7 @@ const HomePage = () => {
 
         .btn-gradient:hover {
           transform: translateY(-3px);
-          box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+          box-shadow: 0 20px 40px rgba(16, 185, 129, 0.4);
           color: white;
         }
 
@@ -731,11 +731,11 @@ const HomePage = () => {
 
         .btn-glass {
           padding: 1rem 2.5rem;
-          border: 2px solid #667eea;
+          border: 2px solid #10b981;
           border-radius: 50px;
           background: white;
           backdrop-filter: blur(10px);
-          color: #667eea;
+          color: #10b981;
           font-weight: 600;
           font-size: 1rem;
           text-decoration: none;
@@ -743,15 +743,15 @@ const HomePage = () => {
           align-items: center;
           transition: all 0.3s ease;
           animation: fadeInUp 1s ease 0.6s backwards;
-          box-shadow: 0 4px 20px rgba(102, 126, 234, 0.2);
+          box-shadow: 0 4px 20px rgba(16, 185, 129, 0.2);
         }
 
         .btn-glass:hover {
-          background: #667eea;
-          border-color: #667eea;
+          background: #10b981;
+          border-color: #10b981;
           transform: translateY(-3px);
           color: white;
-          box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+          box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
         }
 
         .stats-wrapper {
@@ -764,20 +764,20 @@ const HomePage = () => {
         .stat-card {
           background: white;
           backdrop-filter: blur(10px);
-          border: 2px solid rgba(102, 126, 234, 0.1);
+          border: 2px solid rgba(16, 185, 129, 0.1);
           border-radius: 20px;
           padding: 1.5rem;
           text-align: center;
           transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           animation: fadeInScale 0.6s ease backwards;
-          box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+          box-shadow: 0 8px 25px rgba(16, 185, 129, 0.15);
         }
 
         .stat-card:hover {
           transform: translateY(-10px) scale(1.05);
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           border-color: transparent;
-          box-shadow: 0 20px 50px rgba(102, 126, 234, 0.35);
+          box-shadow: 0 20px 50px rgba(16, 185, 129, 0.35);
         }
 
         .stat-card:hover .stat-icon-wrapper {
@@ -786,7 +786,7 @@ const HomePage = () => {
         }
 
         .stat-card:hover .stat-icon {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
@@ -804,13 +804,13 @@ const HomePage = () => {
           width: 60px;
           height: 60px;
           margin: 0 auto 1rem;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           border-radius: 15px;
           display: flex;
           align-items: center;
           justify-content: center;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+          box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
         }
 
         .stat-icon {
@@ -822,7 +822,7 @@ const HomePage = () => {
         .stat-value {
           font-size: 2rem;
           font-weight: 800;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -862,7 +862,7 @@ const HomePage = () => {
           position: absolute;
           width: 100%;
           height: 100%;
-          background: radial-gradient(circle, rgba(102, 126, 234, 0.35) 0%, rgba(240, 147, 251, 0.25) 30%, rgba(79, 172, 254, 0.15) 50%, transparent 70%);
+          background: radial-gradient(circle, rgba(16, 185, 129, 0.35) 0%, rgba(240, 147, 251, 0.25) 30%, rgba(79, 172, 254, 0.15) 50%, transparent 70%);
           filter: blur(100px);
           animation: pulse 5s ease-in-out infinite;
         }
@@ -888,15 +888,15 @@ const HomePage = () => {
           position: relative;
           z-index: 2;
           animation: float 6s ease-in-out infinite;
-          box-shadow: 0 50px 120px rgba(102, 126, 234, 0.4), 
-                      0 0 80px rgba(118, 75, 162, 0.2),
+          box-shadow: 0 50px 120px rgba(16, 185, 129, 0.4), 
+                      0 0 80px rgba(5, 150, 105, 0.2),
                       inset 0 0 80px rgba(255, 255, 255, 0.1);
         }
 
         .main-card-glow {
           position: absolute;
           inset: -4px;
-          background: linear-gradient(135deg, #667eea, #764ba2, #f093fb, #4facfe, #667eea);
+          background: linear-gradient(135deg, #10b981, #059669, #f093fb, #4facfe, #10b981);
           background-size: 300% 300%;
           border-radius: 40px;
           filter: blur(40px);
@@ -927,9 +927,9 @@ const HomePage = () => {
           position: absolute;
           width: 8px;
           height: 8px;
-          background: linear-gradient(135deg, #667eea, #f093fb);
+          background: linear-gradient(135deg, #10b981, #f093fb);
           border-radius: 50%;
-          box-shadow: 0 0 15px rgba(102, 126, 234, 0.8), 0 0 30px rgba(240, 147, 251, 0.4);
+          box-shadow: 0 0 15px rgba(16, 185, 129, 0.8), 0 0 30px rgba(240, 147, 251, 0.4);
           animation: particle-float 3s ease-in-out infinite;
         }
 
@@ -964,13 +964,13 @@ const HomePage = () => {
 
         .main-card-icon {
           font-size: 6.5rem;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 60%, #4facfe 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 30%, #f093fb 60%, #4facfe 100%);
           background-size: 200% 200%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           margin-bottom: 2rem;
           animation: bounce-subtle 2s ease-in-out infinite, gradient-shift 6s ease infinite;
-          filter: drop-shadow(0 8px 20px rgba(102, 126, 234, 0.5));
+          filter: drop-shadow(0 8px 20px rgba(16, 185, 129, 0.5));
         }
 
         @keyframes bounce-subtle {
@@ -983,7 +983,7 @@ const HomePage = () => {
         }
 
         .main-card-title {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 60%, #4facfe 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 30%, #f093fb 60%, #4facfe 100%);
           background-size: 200% 200%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -993,7 +993,7 @@ const HomePage = () => {
           margin-bottom: 1rem;
           letter-spacing: -1px;
           animation: gradient-shift 8s ease infinite;
-          text-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+          text-shadow: 0 10px 30px rgba(16, 185, 129, 0.3);
         }
 
         .main-card-subtitle {
@@ -1002,7 +1002,7 @@ const HomePage = () => {
           font-size: 1.15rem;
           font-weight: 600;
           opacity: 0.9;
-          text-shadow: 0 2px 10px rgba(102, 126, 234, 0.2);
+          text-shadow: 0 2px 10px rgba(16, 185, 129, 0.2);
         }
 
         .floating-card {
@@ -1015,25 +1015,25 @@ const HomePage = () => {
           text-align: center;
           animation: float 4s ease-in-out infinite;
           transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-          box-shadow: 0 25px 60px rgba(102, 126, 234, 0.3), 
-                      0 0 40px rgba(118, 75, 162, 0.15),
+          box-shadow: 0 25px 60px rgba(16, 185, 129, 0.3), 
+                      0 0 40px rgba(5, 150, 105, 0.15),
                       inset 0 0 40px rgba(255, 255, 255, 0.15);
         }
 
         .floating-card:hover {
           transform: scale(1.12) translateY(-5px);
           background: rgba(255, 255, 255, 0.95);
-          box-shadow: 0 35px 90px rgba(102, 126, 234, 0.5), 
+          box-shadow: 0 35px 90px rgba(16, 185, 129, 0.5), 
                       0 0 60px rgba(240, 147, 251, 0.3),
                       inset 0 0 60px rgba(255, 255, 255, 0.2);
-          border-color: rgba(102, 126, 234, 0.8);
+          border-color: rgba(16, 185, 129, 0.8);
         }
 
         .card-glow {
           position: absolute;
           inset: -3px;
           border-radius: 24px;
-          background: linear-gradient(135deg, #667eea, #764ba2, #f093fb, #4facfe);
+          background: linear-gradient(135deg, #10b981, #059669, #f093fb, #4facfe);
           background-size: 300% 300%;
           filter: blur(25px);
           opacity: 0;
@@ -1048,16 +1048,16 @@ const HomePage = () => {
 
         .card-icon {
           font-size: 4rem;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 30%, #f093fb 70%, #4facfe 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 30%, #f093fb 70%, #4facfe 100%);
           background-size: 200% 200%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-          filter: drop-shadow(0 4px 12px rgba(102, 126, 234, 0.4));
+          filter: drop-shadow(0 4px 12px rgba(16, 185, 129, 0.4));
           animation: gradient-shift 8s ease infinite;
         }
 
         .card-text {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 40%, #f093fb 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 40%, #f093fb 100%);
           background-size: 200% 200%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -1111,13 +1111,13 @@ const HomePage = () => {
         .feature-card {
           background: white;
           backdrop-filter: blur(20px);
-          border: 2px solid rgba(102, 126, 234, 0.1);
+          border: 2px solid rgba(16, 185, 129, 0.1);
           border-radius: 20px;
           padding: 2.5rem;
           transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           position: relative;
           overflow: hidden;
-          box-shadow: 0 8px 30px rgba(102, 126, 234, 0.12);
+          box-shadow: 0 8px 30px rgba(16, 185, 129, 0.12);
         }
 
         .feature-card::before {
@@ -1127,7 +1127,7 @@ const HomePage = () => {
           left: 0;
           width: 100%;
           height: 100%;
-          background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+          background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(5, 150, 105, 0.08) 100%);
           opacity: 0;
           transition: opacity 0.4s ease;
         }
@@ -1138,14 +1138,14 @@ const HomePage = () => {
 
         .feature-card:hover {
           transform: translateY(-15px) scale(1.03);
-          box-shadow: 0 30px 70px rgba(102, 126, 234, 0.3);
-          border-color: #667eea;
+          box-shadow: 0 30px 70px rgba(16, 185, 129, 0.3);
+          border-color: #10b981;
         }
 
         .feature-icon {
           width: 80px;
           height: 80px;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           border-radius: 20px;
           display: flex;
           align-items: center;
@@ -1153,7 +1153,7 @@ const HomePage = () => {
           color: white;
           position: relative;
           z-index: 1;
-          box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+          box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
         }
 
         .feature-card h4 {
@@ -1172,13 +1172,13 @@ const HomePage = () => {
         .module-card {
           background: white;
           backdrop-filter: blur(20px);
-          border: 2px solid rgba(102, 126, 234, 0.1);
+          border: 2px solid rgba(16, 185, 129, 0.1);
           border-radius: 25px;
           padding: 2.5rem;
           transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           position: relative;
           overflow: hidden;
-          box-shadow: 0 8px 30px rgba(102, 126, 234, 0.12);
+          box-shadow: 0 8px 30px rgba(16, 185, 129, 0.12);
         }
 
         .module-card::before {
@@ -1216,7 +1216,7 @@ const HomePage = () => {
 
         .module-card:hover {
           transform: translateY(-15px) scale(1.03);
-          box-shadow: 0 35px 80px rgba(102, 126, 234, 0.35);
+          box-shadow: 0 35px 80px rgba(16, 185, 129, 0.35);
           border-color: transparent;
           border-width: 3px;
         }
@@ -1287,12 +1287,12 @@ const HomePage = () => {
           padding: 2rem;
           background: white;
           backdrop-filter: blur(20px);
-          border: 2px solid rgba(102, 126, 234, 0.1);
+          border: 2px solid rgba(16, 185, 129, 0.1);
           border-radius: 20px;
           transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           position: relative;
           overflow: hidden;
-          box-shadow: 0 8px 30px rgba(102, 126, 234, 0.12);
+          box-shadow: 0 8px 30px rgba(16, 185, 129, 0.12);
         }
 
         .benefit-item::before {
@@ -1302,7 +1302,7 @@ const HomePage = () => {
           top: 0;
           width: 4px;
           height: 100%;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           transform: scaleY(0);
           transition: transform 0.4s ease;
         }
@@ -1313,9 +1313,9 @@ const HomePage = () => {
 
         .benefit-item:hover {
           transform: translateX(15px) scale(1.02);
-          box-shadow: 0 25px 60px rgba(102, 126, 234, 0.3);
+          box-shadow: 0 25px 60px rgba(16, 185, 129, 0.3);
           background: white;
-          border-color: #667eea;
+          border-color: #10b981;
         }
 
         .benefit-item h5 {
@@ -1333,14 +1333,14 @@ const HomePage = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          background: rgba(102, 126, 234, 0.1);
-          border: 1px solid rgba(102, 126, 234, 0.2);
+          background: rgba(16, 185, 129, 0.1);
+          border: 1px solid rgba(16, 185, 129, 0.2);
           border-radius: 18px;
           transition: all 0.3s ease;
         }
 
         .benefit-item:hover .benefit-icon {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           transform: scale(1.1) rotate(5deg);
         }
 
@@ -1353,11 +1353,11 @@ const HomePage = () => {
         .stat-box {
           background: white;
           backdrop-filter: blur(20px);
-          border: 2px solid rgba(102, 126, 234, 0.1);
+          border: 2px solid rgba(16, 185, 129, 0.1);
           padding: 2.5rem;
           border-radius: 20px;
           text-align: center;
-          box-shadow: 0 10px 35px rgba(102, 126, 234, 0.15);
+          box-shadow: 0 10px 35px rgba(16, 185, 129, 0.15);
           transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           position: relative;
           overflow: hidden;
@@ -1367,7 +1367,7 @@ const HomePage = () => {
           content: '';
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           opacity: 0;
           transition: opacity 0.4s ease;
         }
@@ -1378,12 +1378,12 @@ const HomePage = () => {
 
         .stat-box:hover {
           transform: translateY(-10px) scale(1.05);
-          box-shadow: 0 30px 70px rgba(102, 126, 234, 0.4);
-          border-color: #667eea;
+          box-shadow: 0 30px 70px rgba(16, 185, 129, 0.4);
+          border-color: #10b981;
         }
 
         .stat-box h3 {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -1399,7 +1399,7 @@ const HomePage = () => {
 
         /* CTA Section */
         .cta-section {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 50%, #f093fb 100%);
           background-size: 200% 200%;
           animation: gradient-slide 15s ease infinite;
           position: relative;
@@ -1443,20 +1443,20 @@ const HomePage = () => {
         .contact-card {
           background: white;
           backdrop-filter: blur(20px);
-          border: 2px solid rgba(102, 126, 234, 0.1);
+          border: 2px solid rgba(16, 185, 129, 0.1);
           padding: 2.5rem;
           border-radius: 20px;
           transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           position: relative;
           overflow: hidden;
-          box-shadow: 0 8px 30px rgba(102, 126, 234, 0.12);
+          box-shadow: 0 8px 30px rgba(16, 185, 129, 0.12);
         }
 
         .contact-card::before {
           content: '';
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           opacity: 0;
           transition: opacity 0.4s ease;
         }
@@ -1467,8 +1467,8 @@ const HomePage = () => {
 
         .contact-card:hover {
           transform: translateY(-10px) scale(1.03);
-          box-shadow: 0 30px 70px rgba(102, 126, 234, 0.35);
-          border-color: #667eea;
+          box-shadow: 0 30px 70px rgba(16, 185, 129, 0.35);
+          border-color: #10b981;
         }
 
         .contact-card h5 {
@@ -1487,7 +1487,7 @@ const HomePage = () => {
         .footer {
           background: linear-gradient(180deg, #f8f9ff 0%, #e8ecff 100%);
           color: #4a5568;
-          border-top: 1px solid rgba(102, 126, 234, 0.2);
+          border-top: 1px solid rgba(16, 185, 129, 0.2);
         }
 
         .footer-links li {
@@ -1508,12 +1508,12 @@ const HomePage = () => {
           left: 0;
           width: 0;
           height: 2px;
-          background: linear-gradient(90deg, #667eea, #764ba2);
+          background: linear-gradient(90deg, #10b981, #059669);
           transition: width 0.3s ease;
         }
 
         .footer-links a:hover {
-          color: #667eea;
+          color: #10b981;
         }
 
         .footer-links a:hover::after {
@@ -1525,25 +1525,25 @@ const HomePage = () => {
           height: 45px;
           background: white;
           backdrop-filter: blur(10px);
-          border: 2px solid rgba(102, 126, 234, 0.2);
+          border: 2px solid rgba(16, 185, 129, 0.2);
           border-radius: 12px;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #667eea;
+          color: #10b981;
           text-decoration: none;
           transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           font-size: 1.3rem;
           position: relative;
           overflow: hidden;
-          box-shadow: 0 4px 15px rgba(102, 126, 234, 0.15);
+          box-shadow: 0 4px 15px rgba(16, 185, 129, 0.15);
         }
 
         .social-icon::before {
           content: '';
           position: absolute;
           inset: 0;
-          background: linear-gradient(135deg, #667eea, #764ba2);
+          background: linear-gradient(135deg, #10b981, #059669);
           opacity: 0;
           transition: opacity 0.4s ease;
         }
@@ -1555,7 +1555,7 @@ const HomePage = () => {
         .social-icon:hover {
           transform: translateY(-5px) scale(1.15);
           border-color: transparent;
-          box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+          box-shadow: 0 10px 30px rgba(16, 185, 129, 0.4);
           color: #ffffff !important;
         }
 
@@ -1577,9 +1577,9 @@ const HomePage = () => {
           border-radius: 50px;
           font-weight: 600;
           font-size: 0.875rem;
-          background: rgba(102, 126, 234, 0.15);
-          border: 1px solid rgba(102, 126, 234, 0.3);
-          color: #667eea;
+          background: rgba(16, 185, 129, 0.15);
+          border: 1px solid rgba(16, 185, 129, 0.3);
+          color: #10b981;
         }
 
         .badge-success {

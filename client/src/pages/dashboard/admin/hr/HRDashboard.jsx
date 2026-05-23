@@ -45,7 +45,7 @@ const HRDashboard = () => {
         { title: 'Staff Directory', icon: 'mdi:account-search', path: '/hr/staff-directory', color: '#06b6d4', description: 'View all employees' },
         { title: 'Add Employee', icon: 'mdi:account-plus', path: '/admin/master/StaffDetails?add=true', color: '#10b981', description: 'Register new staff' },
         { title: 'Leave Requests', icon: 'mdi:calendar-check', path: '/hr/leave-approval', color: '#f59e0b', description: 'Approve/reject leaves' },
-        { title: 'Attendance', icon: 'mdi:clipboard-check', path: '/hr/staff-attendance', color: '#8b5cf6', description: 'Mark daily attendance' },
+        { title: 'Attendance', icon: 'mdi:clipboard-check', path: '/hr/staff-attendance', color: '#10b981', description: 'Mark daily attendance' },
     ];
 
     // HR Modules
@@ -64,7 +64,7 @@ const HRDashboard = () => {
         {
             title: 'Attendance & Time',
             icon: 'mdi:clock-time-eight',
-            color: '#8b5cf6',
+            color: '#10b981',
             items: [
                 { name: 'Staff Attendance', icon: 'mdi:clipboard-check', path: '/hr/staff-attendance' },
                 { name: 'Time Office', icon: 'mdi:clock-outline', path: '/hr/time-office' },
@@ -164,7 +164,7 @@ const HRDashboard = () => {
                 .dashboard-card-dept {
                     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
                     border-radius: 20px;
-                    border: 2px solid rgba(102, 126, 234, 0.1);
+                    border: 2px solid rgba(16, 185, 129, 0.1);
                     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
                     position: relative;
                     overflow: hidden;
@@ -173,8 +173,8 @@ const HRDashboard = () => {
 
                 .dashboard-card-dept:hover {
                     transform: translateY(-10px);
-                    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
-                    border-color: rgba(102, 126, 234, 0.3);
+                    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+                    border-color: rgba(16, 185, 129, 0.3);
                 }
 
                 /* Badge Styling with Gradient */
@@ -430,7 +430,7 @@ const HRDashboard = () => {
                                         title="New Joinees"
                                         value={stats.newJoinees}
                                         icon={UserCheck}
-                                        color="#8b5cf6"
+                                        color="#10b981"
                                         progress={(stats.newJoinees / stats.totalEmployees) * 100 || 0}
                                         left="Last 30 Days"
                                         right="Recent Hires"

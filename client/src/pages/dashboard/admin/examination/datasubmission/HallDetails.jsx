@@ -801,7 +801,7 @@ const HallDetails = () => {
                             <h6 style={{
                               fontSize: '16px',
                               fontWeight: '700',
-                              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                              background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
                               WebkitBackgroundClip: 'text',
                               WebkitTextFillColor: 'transparent',
                               marginBottom: '16px'
@@ -815,8 +815,8 @@ const HallDetails = () => {
                               padding: '24px',
                               background: 'linear-gradient(135deg, #ffffffff 0%, #ffffffff 100%)',
                               borderRadius: '16px',
-                              border: '2px solid #667eea',
-                              boxShadow: '0 12px 40px rgba(102, 126, 234, 0.15)',
+                              border: '2px solid #10b981',
+                              boxShadow: '0 12px 40px rgba(16, 185, 129, 0.15)',
                               overflow: 'auto',
                               transition: 'all 0.3s ease'
                             }}>
@@ -865,7 +865,7 @@ const HallDetails = () => {
                               marginTop: '12px',
                               fontSize: '13px',
                               fontWeight: '600',
-                              color: '#667eea'
+                              color: '#10b981'
                             }}>
                               📊 Capacity: <span style={{ fontWeight: '700' }}>{newHallFormModal.capacity} seats</span>
                             </small>

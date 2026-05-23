@@ -131,13 +131,13 @@ const LoginPage = () => {
                     <div className="brand-section mb-5">
                       <Link to="/" className="d-flex align-items-center text-decoration-none">
                         <Icon icon="solar:book-bold-duotone" className="brand-icon" />
-                        <span className="brand-text">SF CMS</span>
+                        <span className="brand-text">NeuroCampus AI</span>
                       </Link>
                     </div>
 
                     <h2 className="illustration-title mb-4">
                       Welcome to<br />
-                      <span className="gradient-text">SF CMS System</span>
+                      <span className="gradient-text">NeuroCampus AI System</span>
                     </h2>
                     <p className="illustration-desc mb-5">
                       Complete campus management system for educational institutions
@@ -185,7 +185,7 @@ const LoginPage = () => {
                     <div className="d-lg-none mb-4">
                       <Link to="/" className="d-flex align-items-center text-decoration-none justify-content-center">
                         <Icon icon="solar:book-bold-duotone" className="brand-icon-mobile" />
-                        <span className="brand-text-mobile">SF ERP</span>
+                        <span className="brand-text-mobile">NeuroCampus AI</span>
                       </Link>
                     </div>
 
@@ -340,7 +340,7 @@ const LoginPage = () => {
         .orb-1 {
           width: 600px;
           height: 600px;
-          background: radial-gradient(circle, rgba(102, 126, 234, 0.25) 0%, transparent 70%);
+          background: radial-gradient(circle, rgba(16, 185, 129, 0.25) 0%, transparent 70%);
           top: -200px;
           right: -100px;
         }
@@ -376,8 +376,8 @@ const LoginPage = () => {
           right: 0;
           bottom: 0;
           background-image: 
-            linear-gradient(rgba(102, 126, 234, 0.05) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(102, 126, 234, 0.05) 1px, transparent 1px);
+            linear-gradient(rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
           background-size: 50px 50px;
           z-index: 0;
         }
@@ -397,9 +397,9 @@ const LoginPage = () => {
           position: absolute;
           width: 6px;
           height: 6px;
-          background: linear-gradient(135deg, #667eea, #f093fb);
+          background: linear-gradient(135deg, #10b981, #f093fb);
           border-radius: 50%;
-          box-shadow: 0 0 15px rgba(102, 126, 234, 0.6);
+          box-shadow: 0 0 15px rgba(16, 185, 129, 0.6);
           animation: particle-float 15s ease-in-out infinite;
         }
 
@@ -462,14 +462,14 @@ const LoginPage = () => {
 
         .brand-icon {
           font-size: 3rem;
-          color: #667eea;
+          color: #10b981;
           margin-right: 1rem;
         }
 
         .brand-text {
           font-size: 2rem;
           font-weight: 800;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
@@ -483,7 +483,7 @@ const LoginPage = () => {
         }
 
         .gradient-text {
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 50%, #f093fb 100%);
           background-size: 200% 200%;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -519,11 +519,11 @@ const LoginPage = () => {
           gap: 1rem;
           padding: 1.25rem;
           background: white;
-          border: 2px solid rgba(102, 126, 234, 0.1);
+          border: 2px solid rgba(16, 185, 129, 0.1);
           border-radius: 20px;
           transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           animation: fadeInUp 0.6s ease backwards;
-          box-shadow: 0 4px 20px rgba(102, 126, 234, 0.08);
+          box-shadow: 0 4px 20px rgba(16, 185, 129, 0.08);
         }
 
         .feature-item:nth-child(1) { animation-delay: 0.4s; }
@@ -532,14 +532,14 @@ const LoginPage = () => {
 
         .feature-item:hover {
           transform: translateX(10px);
-          border-color: #667eea;
-          box-shadow: 0 10px 35px rgba(102, 126, 234, 0.2);
+          border-color: #10b981;
+          box-shadow: 0 10px 35px rgba(16, 185, 129, 0.2);
         }
 
         .feature-icon-wrapper {
           width: 50px;
           height: 50px;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           border-radius: 15px;
           display: flex;
           align-items: center;
@@ -547,7 +547,7 @@ const LoginPage = () => {
           font-size: 1.5rem;
           color: white;
           flex-shrink: 0;
-          box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+          box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
         }
 
         .feature-title {
@@ -582,14 +582,14 @@ const LoginPage = () => {
 
         .brand-icon-mobile {
           font-size: 2.5rem;
-          color: #667eea;
+          color: #10b981;
           margin-right: 0.75rem;
         }
 
         .brand-text-mobile {
           font-size: 1.75rem;
           font-weight: 800;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
@@ -598,7 +598,7 @@ const LoginPage = () => {
           width: 80px;
           height: 80px;
           margin: 0 auto;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           border-radius: 25px;
           display: flex;
           align-items: center;
@@ -607,8 +607,8 @@ const LoginPage = () => {
         }
 
         @keyframes pulse-glow {
-          0%, 100% { box-shadow: 0 0 30px rgba(102, 126, 234, 0.4); }
-          50% { box-shadow: 0 0 50px rgba(102, 126, 234, 0.7); }
+          0%, 100% { box-shadow: 0 0 30px rgba(16, 185, 129, 0.4); }
+          50% { box-shadow: 0 0 50px rgba(16, 185, 129, 0.7); }
         }
 
         .login-main-icon {
@@ -619,7 +619,7 @@ const LoginPage = () => {
         .login-title {
           font-size: 2rem;
           font-weight: 800;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 50%, #f093fb 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           margin-bottom: 0.5rem;
@@ -674,7 +674,7 @@ const LoginPage = () => {
           top: 50%;
           transform: translateY(-50%);
           font-size: 1.25rem;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           pointer-events: none;
@@ -684,7 +684,7 @@ const LoginPage = () => {
         .form-control-custom {
           width: 100%;
           padding: 1rem 1.25rem 1rem 3.5rem;
-          border: 2px solid rgba(102, 126, 234, 0.15);
+          border: 2px solid rgba(16, 185, 129, 0.15);
           border-radius: 15px;
           background: white;
           font-size: 1rem;
@@ -694,8 +694,8 @@ const LoginPage = () => {
         }
 
         .form-control-custom:focus {
-          border-color: #667eea;
-          box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+          border-color: #10b981;
+          box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1);
         }
 
         .form-control-custom::placeholder {
@@ -743,7 +743,7 @@ const LoginPage = () => {
         }
 
         .password-toggle:hover {
-          color: #667eea;
+          color: #10b981;
         }
 
         /* Remember Me & Forgot Password */
@@ -756,10 +756,10 @@ const LoginPage = () => {
         .form-check-custom input {
           width: 18px;
           height: 18px;
-          border: 2px solid rgba(102, 126, 234, 0.3);
+          border: 2px solid rgba(16, 185, 129, 0.3);
           border-radius: 5px;
           cursor: pointer;
-          accent-color: #667eea;
+          accent-color: #10b981;
         }
 
         .form-check-custom label {
@@ -770,7 +770,7 @@ const LoginPage = () => {
         }
 
         .forgot-link {
-          color: #667eea;
+          color: #10b981;
           text-decoration: none;
           font-weight: 600;
           font-size: 0.95rem;
@@ -778,7 +778,7 @@ const LoginPage = () => {
         }
 
         .forgot-link:hover {
-          color: #764ba2;
+          color: #059669;
           text-decoration: underline;
         }
 
@@ -788,7 +788,7 @@ const LoginPage = () => {
           padding: 1.15rem 2rem;
           border: none;
           border-radius: 15px;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: linear-gradient(135deg, #10b981 0%, #059669 100%);
           color: white;
           font-size: 1.1rem;
           font-weight: 700;
@@ -799,12 +799,12 @@ const LoginPage = () => {
           display: flex;
           align-items: center;
           justify-content: center;
-          box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+          box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
         }
 
         .btn-login:hover {
           transform: translateY(-3px);
-          box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+          box-shadow: 0 12px 35px rgba(16, 185, 129, 0.5);
         }
 
         .btn-login span {
@@ -841,7 +841,7 @@ const LoginPage = () => {
         .divider-custom::after {
           content: '';
           flex: 1;
-          border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+          border-bottom: 2px solid rgba(16, 185, 129, 0.1);
         }
 
         .divider-custom span {
@@ -857,7 +857,7 @@ const LoginPage = () => {
 
         .social-btn {
           padding: 0.875rem 1rem;
-          border: 2px solid rgba(102, 126, 234, 0.15);
+          border: 2px solid rgba(16, 185, 129, 0.15);
           border-radius: 12px;
           background: white;
           color: #2d3748;
@@ -872,9 +872,9 @@ const LoginPage = () => {
         }
 
         .social-btn:hover {
-          border-color: #667eea;
+          border-color: #10b981;
           transform: translateY(-2px);
-          box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
+          box-shadow: 0 6px 20px rgba(16, 185, 129, 0.2);
         }
 
         .social-btn svg {
@@ -889,14 +889,14 @@ const LoginPage = () => {
         }
 
         .signup-link {
-          color: #667eea;
+          color: #10b981;
           font-weight: 700;
           text-decoration: none;
           transition: all 0.3s ease;
         }
 
         .signup-link:hover {
-          color: #764ba2;
+          color: #059669;
           text-decoration: underline;
         }
 

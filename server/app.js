@@ -1,5 +1,5 @@
 /**
- * SF-ERP Production Server
+ * NeuroCampus AI Production Server
  * ========================
  * Industrial-grade Express.js server with:
  * - Centralized error handling

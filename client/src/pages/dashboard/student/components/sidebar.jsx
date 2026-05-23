@@ -102,12 +102,12 @@ const Sidebar = () => {
     // Premium Color Mapping (matching Admin style)
     const getMenuItemColor = (colorKey) => {
         const colorMap = {
-            'dashboard': { bg: '#5568d3', light: 'rgba(102, 126, 234, 0.15)', dark: '#3d4fa6' },
+            'dashboard': { bg: '#5568d3', light: 'rgba(16, 185, 129, 0.15)', dark: '#3d4fa6' },
             'academic': { bg: '#0ea5e9', light: 'rgba(79, 172, 254, 0.15)', dark: '#0d7fb5' },
             'assessment': { bg: '#0ea5e9', light: 'rgba(79, 172, 254, 0.15)', dark: '#0db56fff' },
             'enquiry': { bg: '#f5576c', light: 'rgba(240, 147, 251, 0.15)', dark: '#d63842' },
         };
-        return colorMap[colorKey] || { bg: '#5568d3', light: 'rgba(102, 126, 234, 0.15)', dark: '#3d4fa6' };
+        return colorMap[colorKey] || { bg: '#5568d3', light: 'rgba(16, 185, 129, 0.15)', dark: '#3d4fa6' };
     };
 
     const isRouteActive = (itemHref) => {

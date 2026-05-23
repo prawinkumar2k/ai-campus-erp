@@ -19,9 +19,9 @@ const seatStyles = `
   }
   
   @keyframes colorShift {
-    0% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    0% { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
     50% { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-    100% { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    100% { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
   }
   
   .seat-item {
@@ -1340,8 +1340,8 @@ const ExamGeneration = () => {
                             padding: '24px',
                             background: 'linear-gradient(135deg, #ffffffff 0%, #ffffffff 100%)',
                             borderRadius: '16px',
-                            border: '2px solid #667eea',
-                            boxShadow: '0 12px 40px rgba(102, 126, 234, 0.15)'
+                            border: '2px solid #10b981',
+                            boxShadow: '0 12px 40px rgba(16, 185, 129, 0.15)'
                           }}
                         >
                           {seats.map((row, r) =>

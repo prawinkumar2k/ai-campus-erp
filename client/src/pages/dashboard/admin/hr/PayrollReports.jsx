@@ -144,7 +144,7 @@ const PayrollReports = () => {
                         {/* Summary Cards */}
                         <div className="row g-3 mb-4">
                             <div className="col-md-3">
-                                <div className="card border-0 shadow-sm bg-gradient" style={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
+                                <div className="card border-0 shadow-sm bg-gradient" style={{ background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)' }}>
                                     <div className="card-body text-white py-4">
                                         <div className="d-flex justify-content-between align-items-center">
                                             <div>

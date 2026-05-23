@@ -240,7 +240,7 @@ export default function LeadManagement() {
                     title="Confirmed Leads"
                     value={stats.confirmed}
                     icon={TrendingUp}
-                    color="#9333ea"
+                    color="#10b981"
                     progress={Math.round((stats.confirmed / stats.total) * 100) || 0}
                     left="Conversion success"
                     right="Verified students"

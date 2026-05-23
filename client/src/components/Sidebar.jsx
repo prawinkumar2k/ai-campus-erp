@@ -35,13 +35,13 @@ const Sidebar = () => {
     const colorMap = {
       // Main Category Colors - from HomePage
       'dashboard': {
-        bg: '#5568d3', text: '#000', light: 'rgba(102, 126, 234, 0.15)',
-        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        bg: '#5568d3', text: '#000', light: 'rgba(16, 185, 129, 0.15)',
+        gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
         dark: '#3d4fa6', colorClass: 'blue'
       },
       'file': {
-        bg: '#5568d3', text: '#000', light: 'rgba(102, 126, 234, 0.15)',
-        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        bg: '#5568d3', text: '#000', light: 'rgba(16, 185, 129, 0.15)',
+        gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
         dark: '#3d4fa6', colorClass: 'blue'
       },
       'academic': {
@@ -50,8 +50,8 @@ const Sidebar = () => {
         dark: '#0d7fb5', colorClass: 'cyan'
       },
       'others': {
-        bg: '#5568d3', text: '#000', light: 'rgba(102, 126, 234, 0.15)',
-        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        bg: '#5568d3', text: '#000', light: 'rgba(16, 185, 129, 0.15)',
+        gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
         dark: '#3d4fa6', colorClass: 'blue'
       },
       'enquiry': {
@@ -97,9 +97,9 @@ const Sidebar = () => {
         dark: '#2563eb', colorClass: 'blue'
       },
       'exam process': {
-        bg: '#8b5cf6', text: '#000', light: 'rgba(139,92,246,0.12)',
-        gradient: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
-        dark: '#6d28d9', colorClass: 'purple'
+        bg: '#10b981', text: '#000', light: 'rgba(16, 185, 129, 0.12)',
+        gradient: 'linear-gradient(135deg, #059669 0%, #10b981 100%)',
+        dark: '#4338ca', colorClass: 'indigo'
       },
       'practical/model': {
         bg: '#059669', text: '#000', light: 'rgba(16,185,129,0.12)',
@@ -114,8 +114,8 @@ const Sidebar = () => {
 
       // File submenu colors
       'file_user_creation': {
-        bg: '#5568d3', text: '#000', light: 'rgba(102, 126, 234, 0.15)',
-        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        bg: '#5568d3', text: '#000', light: 'rgba(16, 185, 129, 0.15)',
+        gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
         dark: '#3d4fa6', colorClass: 'blue'
       },
       'file_log_details': {
@@ -146,8 +146,8 @@ const Sidebar = () => {
         dark: '#5e3b9e', colorClass: 'purple'
       },
       'academic_class_allocation': {
-        bg: '#5568d3', text: '#000', light: 'rgba(102, 126, 234, 0.15)',
-        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        bg: '#5568d3', text: '#000', light: 'rgba(16, 185, 129, 0.15)',
+        gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
         dark: '#3d4fa6', colorClass: 'blue'
       },
       'academic_subject_allocation': {
@@ -173,8 +173,8 @@ const Sidebar = () => {
 
       // Others submenu colors
       'others_course_master': {
-        bg: '#5568d3', text: '#000', light: 'rgba(102, 126, 234, 0.15)',
-        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        bg: '#5568d3', text: '#000', light: 'rgba(16, 185, 129, 0.15)',
+        gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
         dark: '#3d4fa6', colorClass: 'blue'
       },
       'others_regulation_master': {
@@ -205,8 +205,8 @@ const Sidebar = () => {
 
       // General Data / Letter / Office / Transport Categories
       'general data': {
-        bg: '#5568d3', text: '#000', light: 'rgba(102, 126, 234, 0.15)',
-        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        bg: '#5568d3', text: '#000', light: 'rgba(16, 185, 129, 0.15)',
+        gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
         dark: '#3d4fa6', colorClass: 'blue'
       },
       'letter data': {
@@ -271,7 +271,7 @@ const Sidebar = () => {
       },
       'hrleave': {
         bg: '#5568d3', text: '#000', light: 'rgba(72, 187, 120, 0.15)',
-        gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
         dark: '#3d4fa6', colorClass: 'blue'
       },
       'hrpayroll': {
@@ -288,7 +288,7 @@ const Sidebar = () => {
 
     // Fallback colors based on index - matching homepage gradients
     const fallbackColors = [
-      { bg: '#5568d3', text: '#000', light: 'rgba(102, 126, 234, 0.15)', gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)', dark: '#3d4fa6', colorClass: 'blue' },
+      { bg: '#5568d3', text: '#000', light: 'rgba(16, 185, 129, 0.15)', gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)', dark: '#3d4fa6', colorClass: 'blue' },
       { bg: '#0ea5e9', text: '#000', light: 'rgba(79, 172, 254, 0.15)', gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)', dark: '#0d7fb5', colorClass: 'cyan' },
       { bg: '#f5576c', text: '#000', light: 'rgba(240, 147, 251, 0.15)', gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)', dark: '#d63842', colorClass: 'pink' },
       { bg: '#a0650bff', text: '#000', light: 'rgba(250, 112, 154, 0.15)', gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)', dark: '#ffd700', colorClass: 'yellow' },

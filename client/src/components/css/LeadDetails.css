@@ -1,10 +1,10 @@
 /* ===== RAJ SECTION ===== */
 .raj-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   border-radius: 20px;
   padding: 32px;
   color: white;
-  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -282,8 +282,8 @@
 }
 
 .call-history-icon {
-  color: #8b5cf6;
-  background: rgba(139, 92, 246, 0.1);
+  color: #10b981;
+  background: rgba(5, 150, 105, 0.1);
   padding: 8px;
   border-radius: 10px;
 }
@@ -310,7 +310,7 @@
 .timeline-dot {
   width: 40px;
   height: 40px;
-  background: linear-gradient(to right, #a855f7, #ec4899);
+  background: linear-gradient(to right, #10b981, #059669);
   color: white;
   border-radius: 50%;
   display: flex;
@@ -319,7 +319,7 @@
   font-weight: 700;
   font-size: 14px;
   flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
   transition: all 0.2s ease;
 }
 
@@ -330,7 +330,7 @@
 .timeline-line {
   width: 4px;
   height: 100%;
-  background: linear-gradient(to bottom, #d8b4fe, transparent);
+  background: linear-gradient(to bottom, #a7f3d0, transparent);
   margin: auto;
   position: absolute;
   left: 18px;
@@ -497,8 +497,8 @@
 
   background: linear-gradient(
     to right,
-    #9333ea,
-    #db2777
+    #10b981,
+    #059669
   );
 
   color: #ffffff;
@@ -512,8 +512,8 @@
 .call-header button:hover {
   background: linear-gradient(
     to right,
-    #7e22ce,
-    #be185d
+    #047857,
+    #047857
   );
 }
 
@@ -565,8 +565,8 @@
 
 .outcome-select:focus {
   outline: none;
-  border-color: #8b5cf6;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
 }
 
 .notes-textarea {
@@ -583,8 +583,8 @@
 
 .notes-textarea:focus {
   outline: none;
-  border-color: #8b5cf6;
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.1);
 }
 
 .form-actions {
@@ -595,7 +595,7 @@
 }
 
 .save-btn {
-  background: linear-gradient(135deg, #8b5cf6, #a855f7);
+  background: linear-gradient(135deg, #059669, #10b981);
   border: none;
   color: white;
   font-weight: 600;
@@ -604,17 +604,17 @@
 
 .save-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
+  box-shadow: 0 5px 15px rgba(5, 150, 105, 0.3);
 }
 
 /* ===== ADD CALL NOTE DESIGN ===== */
 
 .add-callnote-wrapper {
-  background: linear-gradient(135deg, #faf5ff, #fdf2f8);
+  background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
   border-radius: 26px;
   padding: 32px;
-  border: 1px solid #e9d5ff;
-  box-shadow: 0 20px 45px rgba(168, 85, 247, 0.18);
+  border: 1px solid #a7f3d0;
+  box-shadow: 0 20px 45px rgba(16, 185, 129, 0.18);
   margin-bottom: 24px;
 }
 
@@ -660,8 +660,8 @@
 .input-group-custom select:focus,
 .input-group-custom textarea:focus {
   outline: none;
-  border-color: #a855f7;
-  box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.18);
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.18);
 }
 
 /* ICON INPUT */
@@ -687,7 +687,7 @@
   display: flex;
   gap: 16px;
   padding-top: 20px;
-  border-top: 1px solid #e9d5ff;
+  border-top: 1px solid #a7f3d0;
 }
 
 .save-btn {
@@ -695,7 +695,7 @@
   padding: 14px;
   border-radius: 16px;
   border: none;
-  background: linear-gradient(90deg, #9333ea, #db2777);
+  background: linear-gradient(90deg, #10b981, #059669);
   color: white;
   font-size: 13px;
   font-weight: 500;
@@ -705,7 +705,7 @@
 }
 
 .save-btn:hover {
-  background: linear-gradient(90deg, #7e22ce, #be185d);
+  background: linear-gradient(90deg, #047857, #047857);
   transform: translateY(-2px);
 }
 

@@ -551,7 +551,7 @@ const AssignCall = () => {
                     width: 32px;
                     height: 32px;
                     background: #eef2ff;
-                    color: #4f46e5;
+                    color: #10b981;
                     border-radius: 8px;
                     display: flex;
                     align-items: center;

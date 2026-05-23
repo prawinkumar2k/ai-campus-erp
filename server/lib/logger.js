@@ -29,7 +29,7 @@ const formatLogEntry = (level, message, meta = {}) => {
     timestamp: new Date().toISOString(),
     level,
     message,
-    service: 'sf-erp-backend',
+    service: 'neurocampus-ai-backend',
     environment: config.server.env,
     ...meta,
   };
