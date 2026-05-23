@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+venv/
+.venv/
+env/
+*env/
+
+# Production Build Outputs
+dist/
+build/
+out/
+.next/
+client/dist/
+
+# Local Environment Variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+*.env
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Jetro & Agent Caches
+.jetro/
+.claude/
+.cursor/
+.agents/
+.windsurfrules
+AI_ASSISTANT_BUILDSUMMARY.md
+AI_ASSISTANT_INTEGRATION_GUIDE.md
