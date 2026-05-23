@@ -22,13 +22,26 @@
 
 ---
 
+## Why This Project Stands Out
+
+NeuroCampus AI is positioned as a production-minded, AI-native campus operations platform rather than a demo CRUD app. It combines a real product surface area, a structured RBAC model, deployment-oriented Docker assets, and a documented AI-assisted engineering workflow into a repository that reads like a startup-grade internal platform.
+
+- AI-native engineering workflow centered on Jetro.ai for planning, prototyping, debugging, and documentation
+- Enterprise SaaS framing with modular domain ownership across admissions, academics, HR, examinations, fees, and analytics
+- Deployment-ready architecture with Docker, Nginx, JWT, rate limiting, and structured backend observability
+- Recruiter-friendly documentation that highlights product thinking, operational maturity, and scalable system design
+- End-to-end execution from frontend UX and dashboarding to backend APIs, persistence, and role-aware access control
+
+---
+
 ## 📖 Table of Contents
 
 - [🌟 Overview](#-overview)
+- [Why This Project Stands Out](#why-this-project-stands-out)
 - [🎥 Live Demo](#-live-demo)
 - [🏗️ System Architecture](#️-system-architecture)
 - [⚡ Tech Stack](#-tech-stack)
-- [🤖 AI-Native Engineering Workflow](#-ai-native-engineering-workflow)
+- [🤖 Built Using AI-Native Engineering Workflows with Jetro.ai](#-built-using-ai-native-engineering-workflows-with-jetroai)
 - [✨ Feature Showcase](#-feature-showcase)
 - [🔐 Authentication & RBAC](#-authentication--rbac)
 - [🚀 Quick Start](#-quick-start)
@@ -93,21 +106,16 @@
 
 ---
 
-### 🔑 Demo Credentials (Live System)
+### Demo Access
 
-> Credentials verified against live MongoDB instance on `localhost:5000`
+The repository includes a seeded demo workflow for local evaluation, but credentials are intentionally not embedded in the public documentation. Use the seed and maintenance scripts in `server/scripts/` to provision test identities in your own environment, then authenticate through the configured login flow.
 
-| Role | Username | Password | Access Level |
-|------|----------|----------|--------------|
-| **Super Admin** | `10000001` | `10000001` | Full system access — all modules |
-| **Admin** | `admin` | `admin123` | Administrative modules |
-| **Student** | `560023529001` | `student123` | Student portal — marks, attendance, certificates |
+For a safe public README, the evaluation flow should be described as:
 
-```
-🌐 Frontend:  http://localhost:5173
-🔌 Backend:   http://localhost:5000
-📊 Database:  mongodb://localhost:27017/cms_db
-```
+- Deploy the stack with the documented Docker or local setup
+- Run the database seed and demo provisioning scripts in your private environment
+- Sign in with the locally provisioned demo identities
+- Review the admin, HR, enquiry, and student dashboards through the recorded preview above
 
 ---
 
@@ -127,7 +135,7 @@
   │  └── AI Chat Component   │          │  └── CORS + Compression  │
   └──────────┬───────────────┘          └──────────┬───────────────┘
              │                                      │
-             │     Vite Proxy /api → :5000          │
+             │     Vite Proxy /api → backend API    │
              │◄─────────────────────────────────────┤
              │                                      │
              │                              ┌───────▼────────┐
@@ -152,7 +160,7 @@
 ```
 Client Request
     │
-    ├── Vite Dev Proxy (/api → localhost:5000)
+    ├── Vite Dev Proxy (/api → backend API)
     │         OR
     │   Nginx Reverse Proxy (Production)
     │
@@ -214,11 +222,20 @@ MongoDB Response → JSON → Client
 
 ---
 
-## 🤖 AI-Native Engineering Workflow
+## 🤖 Built Using AI-Native Engineering Workflows with Jetro.ai
 
-NeuroCampus AI was built using an **AI-first development methodology**, leveraging [Jetro.ai](https://jetro.ai) as the primary intelligence layer throughout the engineering lifecycle.
+NeuroCampus AI was built using an **AI-first development methodology**, with [Jetro.ai](https://jetro.ai) acting as the orchestration layer for architecture design, implementation iteration, and documentation. The point was not to use AI as decoration. The point was to compress the product-to-code cycle, keep the architecture coherent, and move quickly without losing engineering discipline.
 
-### How Jetro.ai Powered This Project
+### How Jetro.ai Accelerated Development
+
+Jetro.ai helped compress the delivery cycle across planning, implementation, verification, and documentation:
+
+- Architecture planning: mapped module boundaries, request flows, data ownership, and dependency chains before implementation
+- Rapid prototyping: turned product ideas into implementable UI and backend slices without losing system consistency
+- Iteration speed: shortened the gap between design changes, code edits, and validation by keeping the workflow tightly looped
+- Debugging support: helped reason about auth flows, data-shape mismatches, and multi-module behavior
+- Documentation generation: produced structured README and project narrative drafts that were then refined into release-grade documentation
+- Verification support: assisted with browser-based validation and the capture of representative product states for the README
 
 ```
 ┌────────────────────────────────────────────────────┐
@@ -235,10 +252,10 @@ NeuroCampus AI was built using an **AI-first development methodology**, leveragi
 ```
 
 #### 1. Architecture Planning on Infinite Canvas
-Used Jetro.ai's infinite canvas to map the full MERN system topology — visualizing module dependencies, data flows, and API routes before writing a single line of code.
+Used Jetro.ai's infinite canvas to define the system before implementation: module boundaries, request choreography, data ownership, and operational dependencies were mapped up front so the codebase could scale by design rather than by accident.
 
 #### 2. Automated Theme Refactoring (30+ Files)
-Generated a custom recursive Node.js script via AI to scan all JSX/CSS files and replace hardcoded purple/indigo hex values with the emerald green design system — updating **30+ components** in a single pass:
+Generated a custom recursive Node.js script via AI to scan JSX/CSS files and replace hardcoded purple/indigo values with the emerald green design system, updating **30+ components** in one pass:
 
 ```javascript
 // AI-generated refactoring script — updateThemeAndBranding.js
@@ -249,23 +266,30 @@ Generated a custom recursive Node.js script via AI to scan all JSX/CSS files and
 ```
 
 #### 3. AI-Assisted Database Credential Investigation
-When login credentials were unknown, used AI to query MongoDB directly:
+When the seeded identity model needed validation, AI-assisted inspection helped reason about the MongoDB collections and confirm the auth paths:
 ```bash
-# AI-orchestrated credential discovery
-node findUsers.js → identified users + students collections
-node fixAdminPasswords.js → bcrypt-hashed password reset
-# Result: 108 students seeded + admin credentials verified
+# AI-orchestrated database inspection and seed verification
+node findUsers.js
+node fixAdminPasswords.js
+# Result: seeded identities and auth paths verified in a private environment
 ```
 
 #### 4. Live Browser Verification Agent
-Deployed Jetro.ai browser subagent to:
-- Navigate to `http://localhost:5173/login`
-- Execute admin login flow (role select → username → password → submit)
-- Screenshot admin dashboard → HR module → Enquiry module
-- Execute student login flow with verified `registerNumber`
+Deployed a Jetro.ai browser subagent to validate the UI end to end:
+- Navigate through the login surface in the evaluation environment
+- Execute the admin login flow from credential entry to dashboard rendering
+- Traverse the admin, HR, and enquiry modules to confirm access control and layout stability
+- Validate the student journey with the seeded identity path and dashboard state
 
-#### 5. Structured JSON Logging Architecture
-AI-designed Winston logging schema for production observability:
+#### 5. Iteration Efficiency
+The practical value of the AI-native workflow was faster convergence:
+- fewer manual round trips between idea, implementation, and review
+- faster refactoring of cross-cutting design changes
+- tighter feedback on auth, routing, and dashboard behavior
+- cleaner documentation because the system was documented while it was being built
+
+#### 6. Structured JSON Logging Architecture
+AI-designed Winston logging schema for production observability and operational debugging:
 ```json
 {
   "timestamp": "2026-05-23T16:59:01.031Z",
@@ -377,11 +401,11 @@ const hasAccess = (moduleKey) => {
 // Token payload structure
 {
   user_id: ObjectId,
-  username: "10000001",
+  username: "<demo-username>",
   role_id: ObjectId,
-  role_name: "Admin",
-  staff_name: "Rajkumar",
-  module_access: "dashboard,Academic_...",
+  role_name: "<role>",
+  staff_name: "<display-name>",
+  module_access: "<module-permissions>",
   iat: timestamp,
   exp: iat + 24h
 }
@@ -393,7 +417,7 @@ const hasAccess = (moduleKey) => {
 
 ### Prerequisites
 - Node.js 20+ 
-- MongoDB 7.x (running locally on port 27017)
+- MongoDB 7.x or a compatible managed MongoDB deployment
 - npm 9+
 
 ### 1. Clone & Install
@@ -412,7 +436,7 @@ cd server && npm install && cd ..
 
 ```bash
 # server/.env
-MONGO_URI=mongodb://127.0.0.1:27017/cms_db
+MONGO_URI=mongodb://<host>:27017/cms_db
 JWT_SECRET=your-super-secret-jwt-key-change-in-production
 JWT_EXPIRES_IN=24h
 PORT=5000
@@ -426,12 +450,11 @@ RATE_LIMIT_MAX_REQUESTS=1000
 ```bash
 cd server
 
-# Seed initial data (roles, admin users, sample students)
+# Seed initial data for your private environment
 node scripts/seedDatabase.js
 
-# Reset passwords to known demo values
+# Optional: align local demo identities with your evaluation runbook
 node scripts/fixAdminPasswords.js
-# Output: admin/admin123, 10000001/10000001, students/student123
 ```
 
 ### 4. Launch Development Servers
@@ -443,17 +466,12 @@ cd server && npm run dev
 
 # Terminal 2 — Frontend
 cd client && npm run dev
-# ✅ Vite dev server on http://localhost:5173
+# ✅ Vite dev server available on the configured local host
 ```
 
 ### 5. Login
 
-Navigate to `http://localhost:5173/login`
-
-| Role | Username | Password |
-|------|----------|----------|
-| Super Admin | `10000001` | `10000001` |
-| Student | `560023529001` | `student123` |
+Navigate to the app's login surface in your local or deployed environment and authenticate using the demo identities provisioned by your private seed process.
 
 ---
 
@@ -548,8 +566,8 @@ POST /api/auth/login
 Content-Type: application/json
 
 {
-  "username": "10000001",
-  "password": "10000001",
+  "username": "<demo-username>",
+  "password": "<demo-password>",
   "role": "Admin"
 }
 
@@ -559,10 +577,10 @@ Response 200:
   "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
   "user": {
     "id": "...",
-    "username": "10000001",
-    "staff_name": "Rajkumar",
+    "username": "<demo-username>",
+    "staff_name": "<display-name>",
     "role_name": "Admin",
-    "module_access": "dashboard,Academic_..."
+    "module_access": "<module-permissions>"
   }
 }
 ```
@@ -601,17 +619,17 @@ Response: { user profile object }
 
 ```powershell
 # Test admin login
-$body = @{username='10000001';password='10000001';role='Admin'} | ConvertTo-Json
-Invoke-WebRequest -Uri 'http://localhost:5000/api/auth/login' `
+$body = @{username='<demo-username>';password='<demo-password>';role='Admin'} | ConvertTo-Json
+Invoke-WebRequest -Uri $env:NC_API_URL `
   -Method POST -ContentType 'application/json' -Body $body `
   -UseBasicParsing | Select-Object -ExpandProperty Content
 
 # Test roles endpoint
-Invoke-WebRequest -Uri 'http://localhost:5000/api/auth/roles' -UseBasicParsing | Select-Object Content
+Invoke-WebRequest -Uri "$($env:NC_API_URL)/api/auth/roles" -UseBasicParsing | Select-Object Content
 
 # Test student login
-$body = @{username='560023529001';password='student123';role='Student'} | ConvertTo-Json
-Invoke-WebRequest -Uri 'http://localhost:5000/api/auth/login' `
+$body = @{username='<student-username>';password='<student-password>';role='Student'} | ConvertTo-Json
+Invoke-WebRequest -Uri $env:NC_API_URL `
   -Method POST -ContentType 'application/json' -Body $body `
   -UseBasicParsing | Select-Object Content
 ```
@@ -622,7 +640,7 @@ Invoke-WebRequest -Uri 'http://localhost:5000/api/auth/login' `
 # Verify all collections
 node -e "
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/cms_db').then(async () => {
+mongoose.connect(process.env.MONGO_URI || 'mongodb://<host>:27017/cms_db').then(async () => {
   const cols = await mongoose.connection.db.listCollections().toArray();
   console.log('Collections:', cols.map(c => c.name));
   process.exit(0);
@@ -681,8 +699,8 @@ ai-campus-erp/
 │   │   └── upload.js                # Multer file handling
 │   ├── scripts/
 │   │   ├── seedDatabase.js          # Initial data seeding
-│   │   ├── fixAdminPasswords.js     # Demo credential setup
-│   │   └── findUsers.js             # DB credential inspector
+│   │   ├── fixAdminPasswords.js     # Demo provisioning utility
+│   │   └── findUsers.js             # Private database inspection helper
 │   ├── app.js                       # Express app factory
 │   ├── server.js                    # Entry point
 │   └── .env                         # Environment variables
@@ -717,7 +735,7 @@ ai-campus-erp/
 ### Phase 3 — Production Hardening (📋 Planned)
 - [ ] Redis caching layer for hot-path queries
 - [ ] S3/GCS file storage (replace local Multer)
-- [ ] CI/CD pipeline (GitHub Actions → Docker Hub)
+- [ ] CI/CD pipeline (GitHub Actions → container registry)
 - [ ] Grafana + Prometheus monitoring
 - [ ] End-to-end tests with Playwright
 - [ ] WebSocket real-time notifications
@@ -758,7 +776,7 @@ Full-Stack Engineer | AI-Native Developer
 
 [![GitHub](https://img.shields.io/badge/GitHub-prawinkumar2k-181717?style=for-the-badge&logo=github)](https://github.com/prawinkumar2k)
 
-*Built with ❤️ using MERN Stack + Jetro.ai AI-Native Engineering*
+*Built with a production-first MERN stack and Jetro.ai-powered AI-native engineering workflows*
 
 </div>
 
